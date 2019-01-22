@@ -1,7 +1,7 @@
 <?php
 header('Content-type: application/json;charset=utf-8"');
 header('Access-Control-Allow-Origin: *');
-$lines_arr = json_decode(file_get_contents("./lines/linesAll.json"),true);
+$lines_arr = json_decode(file_get_contents("./data/linesAll.json"),true);
 $line = $lines_arr[rand(0,1966)];
 $lineNum = count($line['lines']);
 $msg = "成功";
